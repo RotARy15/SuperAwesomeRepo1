@@ -1,3 +1,91 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
 input[type=number]{
     width: 50px;
-} 
+}
+
+input:focus {
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    border-radius: 5%;
+}
+
+div {
+    text-align: center;
+}
+
+#environment-data {
+    margin-bottom: 50px;
+}
+
+/* ----------------------------Left Front---------------------------- */
+#left-front {
+    display: inline-block;
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+#left-front div span {
+    position: relative;
+    left: -70px;
+}
+#left-front span#brake {
+    position: relative;
+    left: 65px;
+}
+
+/* ----------------------------Right Front---------------------------- */
+#right-front {
+    display: inline-block;
+    height: 100px;
+    width: 50%;
+    float: right;
+}
+#right-front div span {
+    position: relative;
+    left: 115px;
+}
+#right-front span#brake {
+    position: relative;
+    left: -235px;
+}
+/* ----------------------------Left Rear---------------------------- */
+#left-rear {
+    display: inline-block;
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+#left-rear div span {
+    position: relative;
+    left: -70px;
+}
+#left-rear span#brake {
+    position: relative;
+    left: 65px;
+}
+
+/* ----------------------------Right Rear---------------------------- */
+#right-rear {
+    display: inline-block;
+    height: 100px;
+    width: 50%;
+    float: right;
+}
+#right-rear div span {
+    position: relative;
+    left: 115px;
+}
+#right-rear span#brake {
+    position: relative;
+    left: -235px;
+}
+
+h1 {
+    clear: left;
+    clear: right;
+}

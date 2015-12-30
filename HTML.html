@@ -8,116 +8,136 @@
     <link rel="stylesheet" type="text/css" href="CSS.css">
 </head>
 <body>
-    <div>
-        <h1>Enter Info</h1>
-        <h1>View Info</h1>
+    <div id="main-screen">
+        <h1>Enter Data</h1>
     </div>
 
-    <div title="Enter Data Screen">
-        <div title="Data">
-            <select id="month">
-                <option selected disabled value="0">-Month-</option>
-                <option value="1">January(1)</option>
-                <option value="2">February(2)</option>
-                <option value="3">March(3)</option>
-                <option value="4">April(4)</option>
-                <option value="5">May(5)</option>
-                <option value="6">June(6)</option>
-                <option value="7">July(7)</option>
-                <option value="8">August(8)</option>
-                <option value="9">September(9)</option>
-                <option value="10">October(10)</option>
-                <option value="11">November(11)</option>
-                <option value="12">December(12)</option>
-            </select>
-            <select id="day">
-                <option selected disabled value="0">-Day-</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-            <select id="year">
-                <option selected disabled value="0">-Year-</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                </select>
-            <form title="Location">
-                Location:
-                <input type="text" name="location">
-            </form>
-            <form title="Ambient Temperature">
-                Ambient Temperature:
-                <input type="number" name="ambient-temp">
-            </form>
-            <form title="Surface Temperature">
-                Surface Temperature:
-                <input type="number" name="surface-temp">
-            </form>
-            <form title="Left Front Tire">
-                <input type="number" name="lf-outside">
-                <input type="number" name="lf-middle">
-                <input type="number" name="lf-inside">
-                Tire <--Left Front--> Brake
-                <input type="number" name="lf-brake">
-            </form>
-            <form title="Right Front Tire">
-                <input type="number" name="rf-brake">
-                Brake <--Right Front--> Tire
-                <input type="number" name="rf-inside">
-                <input type="number" name="rf-middle">
-                <input type="number" name="rf-outside">
-            </form>
-            <form title="Left Rear Tire">
-                <input type="number" name="lr-outside">
-                <input type="number" name="lr-middle">
-                <input type="number" name="lr-inside">
-                Tire <--Left Rear--> Brake
-                <input type="number" name="lr-brake">
-            </form>
-            <form title="Right Rear Tire">
-                <input type="number" name="rr-brake">
-                Brake <--Right Rear--> Tire
-                <input type="number" name="rr-inside">
-                <input type="number" name="rr-middle">
-                <input type="number" name="rr-outside">
-            </form>
+    <div id="enter-data-screen">
+        <div id="entry-data">
+            <div id="environment-data">
+                <div id="date-boxes">
+                    <select id="month">
+                        <option selected disabled value="0">-Month-</option>
+                        <option value="1">January(1)</option>
+                        <option value="2">February(2)</option>
+                        <option value="3">March(3)</option>
+                        <option value="4">April(4)</option>
+                        <option value="5">May(5)</option>
+                        <option value="6">June(6)</option>
+                        <option value="7">July(7)</option>
+                        <option value="8">August(8)</option>
+                        <option value="9">September(9)</option>
+                        <option value="10">October(10)</option>
+                        <option value="11">November(11)</option>
+                        <option value="12">December(12)</option>
+                    </select>
+                    <select id="day">
+                        <option selected disabled value="0">-Day-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select id="year">
+                        <option selected disabled value="0">-Year-</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        </select>
+                </div>
+                <form id="Location">
+                    Location:
+                    <input type="text" name="location">
+                </form>
+                <form id="ambient-temperature">
+                    Ambient Temperature:
+                    <input type="number" name="ambient-temp">
+                </form>
+                <form id="surface-temperature">
+                    Surface Temperature:
+                    <input type="number" name="surface-temp">
+                </form>
+            </div>
+            <div id="Car Data">
+                <form id="left-front">
+                    <input type="number" name="lf-outside">
+                    <input type="number" name="lf-middle">
+                    <input type="number" name="lf-inside">
+                    Left Front Corner
+                    <input type="number" name="lf-brake">
+                    <div>
+                        <span>Outside - Middle - Inside</span>
+                        <span id="brake">Brake</span>
+                    </div>
+                </form>
+
+                <form id="right-front">
+                    <input type="number" name="rf-brake">
+                    Right Front Corner
+                    <input type="number" name="rf-inside">
+                    <input type="number" name="rf-middle">
+                    <input type="number" name="rf-outside">
+                    <div>
+                        <span>Inside - Middle - Outside</span>
+                        <span id="brake">Brake</span>
+                    </div>
+                </form>
+
+                <form id="left-rear">
+                    <input type="number" name="lr-outside">
+                    <input type="number" name="lr-middle">
+                    <input type="number" name="lr-inside">
+                    Left Rear Corner
+                    <input type="number" name="lr-brake">
+                    <div>
+                        <span>Outside - Middle - Inside</span>
+                        <span id="brake">Brake</span>
+                    </div>
+                </form>
+
+                <form id="right-rear">
+                    <input type="number" name="rr-brake">
+                    Right Rear Corner
+                    <input type="number" name="rr-inside">
+                    <input type="number" name="rr-middle">
+                    <input type="number" name="rr-outside">
+                    <div>
+                        <span>Inside - Middle - Outside</span>
+                        <span id="brake">Brake</span>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div title="Navigation">
-            <h1>Back</h1>
+        <div id="navigation">
             <h1>Submit</h1>
+            <h1>Back</h1>
         </div>
-    </div>
-
-    <div title="View Info Screen">
-
     </div>
 </body>
 </html>
